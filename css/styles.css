@@ -4,75 +4,85 @@ body {
   color: #fff;
   font-family: 'Cutive', serif;
 }
-#quote-box {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  line-height: .5;
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0;
 }
+
+#quote-box {
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: .5;
+  height: 90%;
+  width: 90%;
+  margin: 10em auto;
+}
+
 .quote {
   font-size: 4rem;
   font-weight: 400;
   line-height: 1.1;
-  position: relative;
   margin: 0;
-  } 
+}
+
 .quote:before, .quote:after {
   font-size: 6rem;
   line-height: 2.5rem;
-  position: absolute;
 }
+
 .quote:before {
   content: "“";
-  top: .25em;
-  left: -.5em;
+  margin: 0;
 }
+
 .quote:after {
   content: "”";
-  bottom: -.1em;
-  margin-left: .1em;
-  position: absolute;
+  margin: 0 0 0 .1em;
 }
+
 .source {
   font-size: 1.25rem;;
   letter-spacing: 0.05em;
   line-height: 1.1;
   text-align: right;
-  margin-right: 4em;
+  margin: 1em 8em .5em 0;
 }
+
 .source:before {
   content: "—";
+  margin: 0 .3em 0 0;
 }
+
+.quoteInfo {
+  text-align: right;
+  margin: .5em 8em 0 0;
+}
+
 .citation {
   font-style: italic;
-}
-.citation:before {
-  content: ", ";
-  font-style: normal;
-}
-.year:before {
-  content: ", ";
-  font-style: normal;
+  text-align: right;
+  margin: .5em 10em 0 0;
 }
 
 #loadQuote {
-  position: fixed;
   width: 12em;
-  display: inline-block;
-  left: 50%;
-  margin-left: -6em;
-  bottom: 150px;
+  margin: 0 auto;
   border-radius: 4px;
-  border: 2px solid #fff;
+  background-color: #492365;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   color: #fff;
-  background-color: #36b55c;
   padding: 15px 0;
-  transition: .5s ;
 }
 #loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
+  background-color: #fff;
+  color: #492365;
+  border-color: #492365;
 }
 #loadQuote:focus {
   outline: none;

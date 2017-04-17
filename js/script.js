@@ -70,8 +70,7 @@ function printQuote () {
 	var pickedQuote = getRandomQuote();
 	var quote = '<p class="quote">' + pickedQuote.quote + '</p>';
 	var name = '<p class="source">' + pickedQuote.name + '</p>';
-	var citation = '<span class="citation">' + pickedQuote.citation + '</span>';
-	var year = '<span class="year">' + pickedQuote.year + '</span>';
-	return document.getElementById('quote-box').innerHTML = quote + name + citation + year;
+	var citation = '<p class="citation">' + pickedQuote.citation + '</p>';
+	return document.getElementById('quote-box').innerHTML = quote + name + citation;
 
 }

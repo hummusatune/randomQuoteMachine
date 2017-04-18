@@ -7,10 +7,10 @@ var quotes = [
 		year:"1940"
 	},
 	{
-		quote:"We took away your art because we thought it would reveal your souls. Or to put it more finely, we did it to prove you had souls at all.",
-		name:"Kazuo Ishiguro",
-		citation:"Never Let Me Go",
-		year:"2005"
+		quote:"Someone I loved once gave me a box full of darkness. It took me years to understand that this, too, was a gift.",
+		name:"Mary Oliver",
+		citation:"Thirst",
+		year:"2006"
 	},
 	{
 		quote:"Years afterward she thought of the duck as still there, swimming and diving all by herself in the sunlight.",
@@ -37,10 +37,10 @@ var quotes = [
 		year:"1966"
 	},
 	{
-		quote:"All I wanna do is get high by the beach, get high by the beach, get high.",
-		name:"Lana Del Rey",
-		citation:"Honeymoon",
-		year:"2015"
+		quote:"If you're looking for sympathy, you'll find it between shit and syphilis in the dictionary.",
+		name:"David Sedaris",
+		citation:"Barrel Fever",
+		year:"1994"
 	},
 	{
 		quote:"No live organism can continue for long to exist sanely under conditions of absolute reality; even larks and katydids are supposed, by some, to dream.",
@@ -51,10 +51,7 @@ var quotes = [
 
 ];
 
-// run through array and return number of entries
-
 // event listener to respond to "Gimme a quote" button clicks
-
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
@@ -68,7 +65,7 @@ function getRandomQuote () {
 
 function printQuote () {
 	var pickedQuote = getRandomQuote();
-	var quote = '<p class="quote">' + pickedQuote.quote + '</p>';
+	var quote = '<p class="quote">“' + pickedQuote.quote + '”</p>';
 	var name = '<p class="source">' + pickedQuote.name + '</p>';
 	var citation = '<p class="citation">' + pickedQuote.citation + '</p>';
 	return document.getElementById('quote-box').innerHTML = quote + name + citation;

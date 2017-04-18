@@ -1,6 +1,5 @@
 body {
-  /*text-align: center;*/
-  background: #222;
+  background: #3772ff;
   color: #fff;
   font-family: 'Cutive', serif;
 }
@@ -56,18 +55,18 @@ body {
   width: 12em;
   margin: 0 auto;
   border-radius: 4px;
-  background-color: #492365;
+  background-color: #f2ff49;
   border: 1px solid transparent;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  color: #fff;
+  color: #3772ff;
   padding: 15px 0;
 }
 #loadQuote:hover {
   background-color: #fff;
-  color: #492365;
-  border-color: #492365;
+  color: #f038ff;
+  border-color: #f038ff;
 }
 #loadQuote:focus {
   outline: none;
@@ -85,7 +84,7 @@ body {
 
 @media (min-width: 1025px) {
   #quote-box {
-    height: 400px;
+    height: 500px;
     width: 90%;
     margin: 8em auto;
   }

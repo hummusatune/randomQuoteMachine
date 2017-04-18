@@ -69,5 +69,4 @@ function printQuote () {
 	var name = '<p class="source">' + pickedQuote.name + '</p>';
 	var citation = '<p class="citation">' + pickedQuote.citation + '</p>';
 	return document.getElementById('quote-box').innerHTML = quote + name + citation;
-
 }
